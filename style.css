@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/images/nature.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weatherForm{
+    margin: 20px;
+}
+
+.cityInput{
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: lighter;
+    border: solid 2px hsla(0, 0%, 20%, 0.3);
+    border-radius: 25px;
+    margin: 10px;
+    width: 300px;
+}
+
+button[type="submit"]{
+    padding: 10px 20px;
+    font-weight: lighter;
+    font-size: 2rem;
+    background-color: hsl(135, 90%, 27%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background-color: hsl(135, 90%, 27%, 80%);
+}
+
+.card {
+    background: hsla(89, 42%, 35%, 0.9); 
+    color: white;
+    font-style: normal;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+h1{
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+p{
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.cityDisplay, .tempDisplay{
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+}
+
+.humidityDisplay{
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+.maxTempDisplay{
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+.weatherEmoji{
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+.errorDisplay{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: hsl(0, 0%, 0%, 0.75);
+}
+
+.header{
+    background-color:hsla(0, 0%, 0%, 0.8);
+    position: static;
+    width: 100%;
+}
+
+.header h1{
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}
+
+footer{
+    background-color:hsla(0, 0%, 0%, 0.8);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p{
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+}
